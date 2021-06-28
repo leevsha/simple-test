@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Нужно написать приложение, которое создаст страницу с тестом на основе массива.
+1)	Массив должен хранить в себе вложенные объекты к каждому отдельному вопросу. Эти объекты должны содержать в себе определенный набор свойств, которые содержат информацию о вопросе – текст вопроса, варианты ответов и правильный ответ. 
+2)	Нужно написать код, который на основе этого массива создаст разметку, которая будет содержать блоки с вопросами и вариантами ответов к ним. Пользователь должен иметь возможность ответить на вопросы.
+3)	На страничке должна находиться кнопка, при нажатии на которую пользователь завершит выполнения теста. Нужно написать код, который, при нажатии на эту кнопку будет сравнивать те ответы, которые дал пользователь с правильными ответами из объектов. После проверки нужно вывести на экран результат (количество правильных ответов и процент правильных ответов, а также прошел пользователь тест или нет). По условию пользователь прошел тест, если ответил правильно минимум на 70% вопросов.
+4)	 Внешнее оформление страницы и набор вопросов создаете на свое усмотрение. -->
+
+    <!-- You need to write an application that will create a page with a test based on an array.
+1) The array should store nested objects for each separate question. These objects must contain a certain set of properties that contain information about the question - the text of the question, answer options and the correct answer.
+2) You need to write a code that, based on this array, will create a markup that will contain blocks with questions and answer options for them. The user should be able to answer questions.
+3) There should be a button on the page, by clicking on which the user will complete the test. You need to write a code that, when you click on this button, will compare the answers given by the user with the correct answers from objects. After checking, you need to display the result (the number of correct answers and the percentage of correct answers, and whether the user passed the test or not). By condition, the user passed the test if he answered correctly at least 70% of the questions.
+4) The external design of the page and a set of questions are created at your discretion. -->
+
+    <div id="mainpage">
+        <header id="testHeader">ТЕСТ</header>
+        <div id="desc">Вам нужно ответить правильно минимум на 70% вопросов, что бы успешно пройти тест</div>
+        <div id="allquestions"></div>
+        <button id="answerbtn">Завершить тест</button>
+        <div id="result"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
